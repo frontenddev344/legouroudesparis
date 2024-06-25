@@ -478,7 +478,7 @@ div#accordionExample {
     text-align: center;
     width: 75%;
     margin: 0 auto;
-    background-color: #e0e0e0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 25px;
 
 }
@@ -498,12 +498,54 @@ div#accordionExample {
 }
 .luxury-img {
     height: 250px;
+    position: relative;
 }
 .luxury-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
+
+
+
+/* Shine */
+
+.luxury-img::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.luxury-img:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+
+
+
+
 .luxury-txt h3 {
     font-size:1.562rem;
     margin-bottom: 8px;
