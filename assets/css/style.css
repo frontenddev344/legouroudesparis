@@ -231,6 +231,7 @@ width: 100%;
     left: 0px;
     right: 0;
     z-index: 99;
+    transform: translateY(-50%);
 }
 .link-wrap {
     display: flex;
