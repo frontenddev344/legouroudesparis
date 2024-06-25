@@ -2,7 +2,7 @@
 
 /* global css start here */
 html{
-    font-size: 10px;
+    font-size: 16px;
 }
 * {
     margin: 0;
@@ -110,7 +110,7 @@ padding: 10px 0;
     padding: 0 20px;
 }
 .main-nav ul li a{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000;
     position: relative;
     font-weight: 500;
@@ -165,13 +165,13 @@ width: 100%;
     text-align: center;
 }
 .banner-txt h1{
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #fff;
     font-weight: 700;
 }
 
 .banner-txt p{
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #fff;
     font-weight: 400;
 }
@@ -185,7 +185,7 @@ width: 100%;
     padding: 30px;
 }
 .about-text p {
-    font-size: 18px;
+    font-size: 1.125;
     color: #000000;
 }
 .about-img{
@@ -220,7 +220,7 @@ width: 100%;
     object-fit: cover;
 }
 .link-txt h4 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -297,14 +297,14 @@ height: 100%;
     object-fit: contain;
 }
 .choose-txt h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
     color: #000;
     transition: all 0.5s ease 0s;
 
 }
 .choose-txt p {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 0;
     transition: all 0.5s ease 0s;
 
@@ -324,7 +324,7 @@ height: 100%;
     position: relative;
 }
 .stay-text p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
 .perfect-stay{
@@ -385,7 +385,7 @@ height: 100%;
 .accordion-body {
     padding: 15px 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
     background: #dfdfdf;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -404,9 +404,8 @@ height: 100%;
 
 .accordion-button {
     border-radius: 10px !important;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 15px 20px;
-
 }
 
 .accordion-button:not(.collapsed) {
@@ -419,7 +418,7 @@ height: 100%;
 } */
 
 .site-heading h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -453,7 +452,7 @@ div#accordionExample {
   }
 
   .top-txt a.moreless-button, a.read_more {
-    font-size: 1.6rem;
+    font-size: 1rem;
     text-transform: uppercase;
     padding: 13px 40px;
     background-color: #f91942;
@@ -472,7 +471,7 @@ div#accordionExample {
     text-align: center;
 }
 .article p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 .top-txt {
     text-align: center;
@@ -505,25 +504,25 @@ div#accordionExample {
     object-fit: cover;
 }
 .luxury-txt h3 {
-    font-size: 25px;
+    font-size:1.562rem;
     margin-bottom: 8px;
     line-height: 1.1;
     margin-top: 15px;
 }
 .luxury-txt p{
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 a.contless-button {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #000;
     text-decoration: underline;
     font-weight: 600;
 }
 .read-more a {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff;
     padding: 10px 30px;
     background: #f91942;
@@ -538,7 +537,7 @@ a.contless-button {
     margin: 15px 0;
 }
 .luxury-txt ul li{
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin: 5px 0;
 }
 .luxury-main .col-lg-4 {
@@ -556,26 +555,26 @@ a.contless-button {
     height: 600px;
 }
 .sub-banner .banner-txt h1 {
-    font-size: 45px;
+    font-size: 2.8125rem;
 }
 .sub-banner .banner-txt p{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
 }
 .disclaimer-txt h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #000;
     margin-bottom: 10px;
 }
 .disclaimer-txt p{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #5b5b5b;
 }
 /* sub pages css end  */
 /* contact us page css start  */
 .contact-heading p {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
     width: 80%;
     margin: 0 auto;
@@ -612,7 +611,7 @@ a.contless-button {
     height: 50px;
     border: 1px solid #777;
     padding: 15px;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 .form-group{
     margin-bottom: 20px;
@@ -623,7 +622,7 @@ a.contless-button {
 .contact-form button {
     padding: 12px 40px;
     border: 1px solid #f91942;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: #f91942;
     color: #fff;
 }
@@ -641,7 +640,7 @@ footer{
     max-width: 150px;
 }
 .social-link ul li a {
-    font-size: 2.2rem;
+    font-size: 1.375rem;
     height: 50px;
     width: 50px;
     display: flex;
@@ -667,11 +666,11 @@ footer{
 }
 .copy-right p {
     color: #333;
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 .footer-links ul li a {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #000;
     transition: all 0.3s linear;
 }

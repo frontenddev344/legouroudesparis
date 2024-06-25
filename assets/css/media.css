@@ -1,6 +1,6 @@
 @media(max-width:1200px){
     html{
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 @media(max-width:1024px){
@@ -16,7 +16,7 @@
     .close, .toggle{
         display: block;
         font-size: 25px;
-        color: #fff;
+        color: #000;
     }
     .close{
         font-size: 20px;
@@ -35,7 +35,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #000;
+        background-color: #fff;
         height: 100vh;
         z-index: 9;
         width: 400px;
@@ -47,23 +47,20 @@
         transform: translateX(0%);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+    .banner-txt h1 {
+        font-size: 3.20rem;
+    }
+    .banner-txt p {
+        font-size: 1.275rem;
+    }
+    .why-choose .col-lg-3 {
+        margin: 15px 0;
+    }
 }
 
 
 @media(max-width:850px){
-    .hotel-main .row {
-        flex-direction: column;
-    }
-    .hotel-main .row .col-md-5, .hotel-main .row .col-md-7 {
-        width: 100%;
-    }
-    .hotel-img {
-        height: 350px;
-        width: 100%;
-    }
-    .first-wrap .row {
-        flex-direction: column-reverse;
-    }
+    
     .about-us .row {
         flex-direction: column-reverse;
     }
@@ -74,9 +71,7 @@
         height: 400px;
         margin-bottom: 20px;
     }
-    .plan-card-box {
-        max-width: 650px;
-    }
+  
     .link-img {
         height: 350px;
     }
@@ -97,66 +92,24 @@
     }
 }
 @media(max-width:767px){
+    html{
+        font-size: 14px;
+    }
     .site-banner {
         height: 500px;
     }
-    .banner-txt h1 {
-        font-size: 5rem;
-    }
-    .banner-txt p {
-        font-size: 2.2rem;
-    }
-    .plan-card-box {
-        flex-direction: column;
-    }
-    .plan-card {
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 25px;
-    }
-    .plan-card:last-child{
-        margin-bottom: 0;
-    }
-    .about-img {
-        height: 350px;
-    }
-    .link-img {
-        height: 300px;
-    }
-    .footer-logo img {
-        max-width: 250px;
-    }
-    .footer-links ul {
-        margin-bottom: 20px;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .site-banner.sub-banner {
-        height: 400px;
-    }
-    .site-banner {
-     padding: 0 20px;
-    }
-    .sub-banner .banner-txt h1 {
-        font-size: 4.8rem;
-    }
-    .hotel-text {
-        padding: 2rem;
+    .site-logo img {
+        max-width: 6rem;
     }
     .site-heading h2 {
-        font-size: 3.8rem;
+        font-size: 2.2rem;
     }
-    .hotel-text h3 {
-        font-size: 3.3rem;
-    }
-    .hotel-img {
-        height: 300px;
+    .stay-text {
+        width: 90%;
     }
 }
 @media(max-width:575px){
-    .site-logo img {
-        max-width: 22rem;
-    }
+ 
     .main-nav {
         width: 100%;
     }
