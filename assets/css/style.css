@@ -144,7 +144,7 @@ width: 100%;
 
 /* banner css start  */
 .site-banner{
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/hero-banner.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +328,7 @@ height: 100%;
     text-align: center;
 }
 .perfect-stay{
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/bg-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

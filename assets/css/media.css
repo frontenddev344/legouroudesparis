@@ -2,6 +2,7 @@
     html{
         font-size: 15px;
     }
+    
 }
 @media(max-width:1024px){
     .copy-right {
@@ -9,6 +10,9 @@
     }
     .footer-links ul {
         margin-bottom: 10px;
+    }
+    .site-banner.sub-banner {
+        height: 550px;
     }
 }
 
@@ -56,6 +60,9 @@
     .why-choose .col-lg-3 {
         margin: 15px 0;
     }
+    .top-txt {
+        width: 85%;
+    }
 }
 
 
@@ -90,6 +97,24 @@
     .site-banner {
         height: 550px;
     }
+    .luxury-img {
+        height: 300px;
+    }
+    .accordion-button {
+        padding: 10px 15px;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contact-img {
+        width: 100%;
+        height: 350px;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 25px;
+    }
 }
 @media(max-width:767px){
     html{
@@ -107,21 +132,99 @@
     .stay-text {
         width: 90%;
     }
+    .contact-heading p {
+        width: 100%;
+    }
+    .contact-img {
+        height: 300px;
+    }
 }
 @media(max-width:575px){
  
     .main-nav {
         width: 100%;
     }
-}
-@media(max-width:350px){
-    html {
-        font-size: 8px;
+    .banner-txt {
+        padding: 0 20px;
     }
-    html {
-        font-size: 8px;
+    .banner-txt h1 {
+        font-size: 3rem;
+        word-break: break-word;
+        line-height: 1.1;
     }
-    .hotel-wrap {
+    .site-banner {
+        height: 450px;
+    }
+    .about-img {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        padding: 0px;
+    }
+    .link-img {
+        height: 250px;
+    }
+    .site-heading h2 {
+        font-size: 2rem;
+    }
+    .why-choose .col-lg-3 {
+        margin: 10px 0;
+    }
+    .stay-text {
+        width: 95%;
+    }
+    .social-link ul {
+        margin: 20px 0;
+        gap: 20px;
+    }
+    .copy-right {
         margin-top: 30px;
+    }
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .site-banner.sub-banner {
+        height: 450px;
+    }
+    .sub-banner .banner-txt h1 {
+        font-size: 2.3125rem;
+    }
+    .sub-banner .banner-txt p {
+        font-size: 1.275rem;
+    }
+    .top-txt {
+        width: 100%;
+        padding: 15px;
+    }
+    .top-txt a.moreless-button, a.read_more {
+        padding: 12px 30px;
+    }
+    .luxury-img {
+        height: 250px;
+    }
+    .site-banner.sub-banner {
+        height: 400px;
+    }
+    .form-group input{
+        height: 45px;
+    }
+    .form-group textarea {
+        height: 200px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:375px){
+  html{
+    font-size: 13px;
+  }
+    .link-txt h4 {
+        font-size: 1.675rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
     }
 }
