@@ -627,6 +627,22 @@ a.contless-button {
     background-color: #f91942;
     color: #fff;
 }
+.privacy-wrap p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.privacy-wrap{
+    margin-bottom: 30px;
+}
+.privacy-wrap ul{
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: disc;
+}
+.privacy-wrap ul li{
+font-size: 1rem;
+margin: 2px 0;
+}
 /* contact  us page css end */
 
 /* footer section css start  */
