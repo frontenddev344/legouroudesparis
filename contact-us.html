@@ -95,25 +95,25 @@
                     <img src="assets/images/contact-us.jpg" alt="">
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                          <input type="text" id="firstName" placeholder="Prénom">
-                          <span class="error" id="firstNameError">Entrez votre prénom s'il vous plait</span>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" id="lastName" placeholder="Nom de famille">
-                          <span class="error" id="lastNameError">Veuillez entrer votre nom de famille</span>
-                        </div>
-                        <div class="form-group">
-                          <input type="email" id="email" placeholder="Entrez l'e-mail">
-                          <span class="error" id="emailError">S'il vous plaît, mettez une adresse email valide</span>
-                        </div>
-                        <div class="form-group">
-                          <textarea id="message" placeholder="Message"></textarea>
-                          <span class="error" id="messageError">Veuillez entrer un message</span>
-                        </div>
-                        <button type="submit">Soumettre</button>
-                      </form>
+                  <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="Prénom">
+                        <span class="error" id="firstNameError">Entrez votre prénom s'il vous plait</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Nom de famille">
+                        <span class="error" id="lastNameError">Veuillez entrer votre nom de famille</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Entrez l'e-mail">
+                        <span class="error" id="emailError">S'il vous plaît, mettez une adresse email valide</span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                        <span class="error" id="messageError">Veuillez entrer un message</span>
+                    </div>
+                    <button type="submit">Soumettre</button>
+                </form>
             </div>
             </div>
         </div>
@@ -178,6 +178,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
+
+    
+
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
           let valid = true;
@@ -222,6 +225,7 @@
           }
         });
       </script>
+      
 
 
   </body>

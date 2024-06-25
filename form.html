@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form id="contactForm">
+        <div class="form-group">
+            <input type="text" id="firstName" name="firstName" placeholder="Prénom">
+            <span class="error" id="firstNameError">Entrez votre prénom s'il vous plait</span>
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastName" name="lastName" placeholder="Nom de famille">
+            <span class="error" id="lastNameError">Veuillez entrer votre nom de famille</span>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Entrez l'e-mail">
+            <span class="error" id="emailError">S'il vous plaît, mettez une adresse email valide</span>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <span class="error" id="messageError">Veuillez entrer un message</span>
+        </div>
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('YOUR_USER_ID'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validate the form fields
+            let isValid = true;
+            if (!firstName) {
+                document.getElementById('firstNameError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('firstNameError').style.display = 'none';
+            }
+
+            if (!lastName) {
+                document.getElementById('lastNameError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('lastNameError').style.display = 'none';
+            }
+
+            if (!email || !/\S+@\S+\.\S+/.test(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            if (!message) {
+                document.getElementById('messageError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('messageError').style.display = 'none';
+            }
+
+            if (!isValid) return;
+
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                from_name: firstName + ' ' + lastName,
+                from_email: email,
+                message: message
+            }).then(function(response) {
+                alert('Message sent successfully!');
+            }, function(error) {
+                console.error('Failed to send message:', error);
+            });
+        });
+    </script>
+</body>
+</html>
