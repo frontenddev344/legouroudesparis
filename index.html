@@ -10,6 +10,48 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <title>Αρχική σελίδα</title>
+
+    <style>
+      /* cookies css star here */
+      #cookies-popup {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #fff;
+        padding: 20px 20px;
+        text-align: center;
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
+        /* display: none;*/
+      }
+      #cookies-popup p {
+        margin: 0;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      #cookies-popup button {
+        background-color: #b02c41;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 0px;
+        border: 1px solid #b02c41;
+        font-size: 1rem;
+      }
+      #accept-cookies:hover, #refuse-cookies:hover {
+        background: transparent;
+        border-color: #b02c41;
+        color: #b02c41;
+        /* border-color: #3486a1; */
+      }
+      /* cookies css end here */
+    </style>
+
+
   </head>
   <body>
 
@@ -461,11 +503,41 @@
   </div>
 </footer>
 
+    <!-- cookies section start here -->
+    <div id="cookies-popup">
+      <p>
+        Ce site Web utilise des cookies pour vous garantir la meilleure expérience sur notre site
+        Web. Les cookies nous aident à fournir des fonctionnalités de réseaux sociaux, à analyser
+        notre trafic et à améliorer nos services. En poursuivant votre navigation sur notre site, vous
+        consentez à notre utilisation des cookies.
+      </p>
+      <button id="accept-cookies">Accepter</button>
+      <button id="refuse-cookies">Refuser</button>
+    </div>
+    <!-- cookies section end here -->
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
- 
+  <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            var acceptCookiesBtn = document.getElementById("accept-cookies");
+            var refuseCookiesBtn = document.getElementById("refuse-cookies");
+            var cookiesPopup = document.getElementById("cookies-popup");
+
+            acceptCookiesBtn.addEventListener("click", function () {
+                cookiesPopup.style.display = "none";
+                // You can add code here to set a cookie to remember the user's choice
+                document.cookie = "cookiesAccepted=true; max-age=" + 60*60*24*365 + "; path=/"; // 1 year
+            });
+
+            refuseCookiesBtn.addEventListener("click", function () {
+                cookiesPopup.style.display = "none";
+                // You can add code here to set a cookie to remember the user's choice
+                document.cookie = "cookiesAccepted=false; max-age=" + 60*60*24*365 + "; path=/"; // 1 year
+            });
+        });
+    </script>
   </body>
 </html>
