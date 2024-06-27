@@ -121,12 +121,12 @@ padding: 10px 0;
     bottom: -7px;
     width: 0%;
     height: 2px;
-    background-color: #875c63;
+    background-color: #b02c41;
     transition: all 0.3s linear;
 
 }
 .main-nav ul li a:hover, .main-nav ul li a.active{
-    color: #875c63;
+    color: #b02c41;
 }
 .main-nav ul li a:hover::before, .main-nav ul li a.active::before {
 width: 100%;
@@ -277,7 +277,7 @@ height: 100%;
     transition: all 0.5s ease 0s;
 }
 .choose-box:hover{
-    background:#875c63;
+    background:#b02c41;
     box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease 0s;
 }
@@ -375,7 +375,7 @@ height: 100%;
 .accordion-button:not(.collapsed),
 .accordion-button {
     color: #ffffff;
-    background-color: #875c63;
+    background-color: #b02c41;
     box-shadow: none;
 }
 
@@ -427,7 +427,7 @@ height: 100%;
     position: relative;
 }
 .site-heading h2 span{
-    color: #875c63;
+    color: #b02c41;
 
 }
 .site-heading h2::before{
@@ -436,7 +436,7 @@ height: 100%;
     bottom: -10px;
     width: 100px;
     height: 3px;
-    background-color: #875c63;
+    background-color: #b02c41;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
@@ -456,8 +456,8 @@ div#accordionExample {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 13px 40px;
-    background-color: #875c63;
-    border: 1px solid #875c63;
+    background-color: #b02c41;
+    border: 1px solid #b02c41;
     transition: all 0.3s linear;
     color: #fff;
     font-weight: 500;
@@ -466,7 +466,7 @@ div#accordionExample {
 }
 .top-txt a.moreless-button:hover, a.read_more:hover{
     background-color: #fff;
-    color: #875c63;
+    color: #b02c41;
 }
 .top-txt {
     text-align: center;
@@ -569,8 +569,8 @@ a.contless-button {
     font-size: 0.875rem;
     color: #fff;
     padding: 10px 30px;
-    background: #875c63;
-    border: 1px solid #875c63;
+    background: #b02c41;
+    border: 1px solid #b02c41;
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
@@ -579,7 +579,7 @@ a.contless-button {
  
 }
 .read-more a:hover{
-    color: #875c63;
+    color: #b02c41;
     background-color: transparent;
 }
 .luxury-txt ul {
@@ -672,15 +672,15 @@ a.contless-button {
 }
 .contact-form button {
     padding: 12px 40px;
-    border: 1px solid #875c63;
+    border: 1px solid #b02c41;
     font-size: 0.875rem;
-    background-color: #875c63;
+    background-color: #b02c41;
     color: #fff;
     transition: all 0.3s linear;
 
 }
 .contact-form button:hover{
-    color: #875c63;
+    color: #b02c41;
     background-color: transparent;
 }
 .privacy-wrap p{
@@ -727,9 +727,9 @@ footer{
 
 }
 .social-link ul li a:hover{
-    background-color: #875c63;
+    background-color: #b02c41;
     color: #fff;
-    border-color: #875c63;
+    border-color: #b02c41;
 }
 .social-link ul {
     display: flex;
@@ -748,7 +748,7 @@ footer{
     transition: all 0.3s linear;
 }
 .footer-links ul li a:hover{
-    color: #875c63;
+    color: #b02c41;
 }
 .footer-links ul{
     display: flex;
