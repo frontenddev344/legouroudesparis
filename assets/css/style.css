@@ -421,13 +421,13 @@ height: 100%;
 .site-heading h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-align: center;
     margin-bottom: 30px;
     position: relative;
 }
 .site-heading h2 span {
-    color: #fff;
+    color: #b02c41;
 }
 .stay-text p {
     color: #fff;
