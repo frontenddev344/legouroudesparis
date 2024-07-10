@@ -4,25 +4,27 @@
 
 // });
 
-$(".toggle").click(function() {
-    $("header").addClass("menuToggle");
-});
-$(".close").click(function() {
-    $("header").removeClass("menuToggle");
-});
+// $(".toggle").click(function() {
+//     $(".main-header").addClass("menuToggle");
+// });
+// $(".close").click(function() {
+//     $(".main-header").removeClass("menuToggle");
+// });
 
-
+$(".toggle").click(function(){
+  $(".main-header").toggleClass("menuToggle");
+});
 
 
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 30) {
-        $('header').addClass('fixed-header');
-        $('header').addClass('visible-title');
+        $('body').addClass('fixed-header');
+        $('body').addClass('visible-title');
     }
     else {
-        $('header').removeClass('fixed-header');
-        $('header').removeClass('visible-title');
+        $('body').removeClass('fixed-header');
+        $('body').removeClass('visible-title');
     }
 });
 

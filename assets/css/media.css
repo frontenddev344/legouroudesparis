@@ -21,15 +21,11 @@
         display: block;
         font-size: 25px;
         color: #000;
+        z-index: 99;
     }
-    .close{
-        font-size: 20px;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
+
+
     .main-nav ul {
-        align-items: flex-start;
         flex-direction: column;
     }
     .main-nav ul li {
@@ -42,14 +38,31 @@
         background-color: #fff;
         height: 100vh;
         z-index: 9;
-        width: 400px;
+        width: 100%;
         padding: 50px;
-        transform: translateX(-100%);
+        transform: translateY(100%);
         transition: all 0.3s linear;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
 }
     .menuToggle .main-nav{
-        transform: translateX(0%);
+        transform: translateY(0%);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+}
+    .menuToggle .open-menu {
+        display: none;
+    }
+    .menuToggle .close-menu{
+        display: block;
+    }
+    .close-menu{
+        display: none;
     }
     .banner-txt h1 {
         font-size: 3.20rem;

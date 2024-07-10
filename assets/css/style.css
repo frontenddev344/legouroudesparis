@@ -85,7 +85,7 @@ img {
 
 
 /* header css start */
-.site-header{
+.main-header{
     /* position: fixed;
     z-index: 9;
     width: 100%; */
@@ -95,7 +95,7 @@ img {
 .site-logo img {
     max-width: 100px;
 }
-.site-header nav{
+.main-header .main-navbar{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -131,11 +131,12 @@ padding: 10px 0;
 .main-nav ul li a:hover::before, .main-nav ul li a.active::before {
 width: 100%;
 }
-.site-header.fixed-header {
+.fixed-header .main-header {
     position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 99;
 }
 /* header css end  */
 
